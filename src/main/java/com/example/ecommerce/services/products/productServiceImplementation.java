@@ -45,12 +45,8 @@ public class productServiceImplementation implements productService {
         products prod = product_Repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("product", "id", id));
 
         prod.setBookName(product_Dto.getBookName());
-        prod.setDescription(product_Dto.getDescription());
-        prod.setSold_product(product_Dto.getSold_product());
-        prod.setRemaining_products(product_Dto.getRemaining_products());
         prod.setAuthorName(product_Dto.getAuthorName());
         prod.setPrice(product_Dto.getPrice());
-        prod.setPicture(product_Dto.getPicture());
 
         products updatedProduct = product_Repository.save(prod);
         return mapToDTO(updatedProduct);
@@ -66,12 +62,8 @@ public class productServiceImplementation implements productService {
         productDto product_Dto = new productDto();
         product_Dto.setId(prod.getId());
         product_Dto.setBookName(prod.getBookName());
-        product_Dto.setDescription(prod.getDescription());
-        product_Dto.setSold_product(prod.getSold_product());
-        product_Dto.setRemaining_products(prod.getRemaining_products());
         product_Dto.setAuthorName(prod.getAuthorName());
         product_Dto.setPrice(prod.getPrice());
-        product_Dto.setPicture(prod.getPicture());
 
         return product_Dto;
     }
@@ -79,12 +71,8 @@ public class productServiceImplementation implements productService {
     private products mapToEntity(productDto product_Dto){
         products prod = new products();
         prod.setBookName(product_Dto.getBookName());
-        prod.setDescription(product_Dto.getDescription());
-        prod.setSold_product(product_Dto.getSold_product());
-        prod.setRemaining_products(product_Dto.getRemaining_products());
         prod.setAuthorName(product_Dto.getAuthorName());
         prod.setPrice(product_Dto.getPrice());
-        prod.setPicture(product_Dto.getPicture());
 
         return prod;
 

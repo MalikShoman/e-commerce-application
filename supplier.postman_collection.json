@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "GetAllSupplier",
+			"name": "get all supplier",
 			"request": {
 				"method": "GET",
 				"header": []
@@ -14,7 +14,7 @@
 			"response": []
 		},
 		{
-			"name": "GetCertainSupplier",
+			"name": "get a supplier",
 			"request": {
 				"method": "GET",
 				"header": []
@@ -22,23 +22,7 @@
 			"response": []
 		},
 		{
-			"name": "DeleteSupplier",
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "addSupplier",
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "update",
+			"name": "delete supplier",
 			"request": {
 				"method": "GET",
 				"header": []

@@ -38,7 +38,7 @@ public class customerController {
 
 
 
-    @PostMapping
+    @PostMapping("/insertCustomer")
     public ResponseEntity<customerDto> insertCustomer(@Valid @RequestBody customerDto customer_Dto) {
         if (customer_Dto.getId() != null) {
             log.error("Cannot have an ID {}", customer_Dto);

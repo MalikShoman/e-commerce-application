@@ -22,23 +22,11 @@ public class products {
     @Column(name = "book_name")
     private String BookName;
 
-    @Column(name = "description")
-    private String description;
-
     @Column(name = "author_name")
     private String authorName;
 
-    @Column(name = "picture")
-    private String picture;
-
     @Column(name = "price")
     private double price;
-
-    @Column(name = "sold_product")
-    private int sold_product;
-
-    @Column(name = "remaining_products")
-    private int remaining_products;
 
 
 }

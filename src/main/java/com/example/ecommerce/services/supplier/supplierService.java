@@ -13,7 +13,6 @@ public interface supplierService {
 
     supplierDto getSupplierById(int id);
 
-
     supplierDto updateSupplier(supplierDto supplier_Dto, int id);
 
     void deleteSupplierById(int id);
