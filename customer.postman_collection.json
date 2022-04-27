@@ -11,7 +11,14 @@
 				"method": "GET",
 				"header": []
 			},
-			"response": []
+			"response": [
+			{
+				"id": 1,
+				"phoneNumber": "0561234877",
+				"address": "ramallah",
+				"name": "malik"
+   			}
+			]
 		},
 		{
 			"name": "get a customer",
@@ -19,15 +26,24 @@
 				"method": "GET",
 				"header": []
 			},
-			"response": []
+			"response": [
+				{
+				"id": 1,
+				"phoneNumber": "0561234877",
+				"address": "ramallah",
+				"name": "malik"
+   			}
+			]
 		},
 		{
 			"name": "delete customer",
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": []
 			},
-			"response": []
+			"response": [
+				Deleted successfully.
+			]
 		}
 	]
 }
